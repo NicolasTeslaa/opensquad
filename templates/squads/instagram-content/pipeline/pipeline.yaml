@@ -1,0 +1,16 @@
+name: instagram-content-pipeline
+description: "Research → Ideate → Choose → Write → Review → Approve"
+squad: instagram-content
+
+input:
+  topic:
+    prompt: "What topic should we create content about?"
+    required: true
+
+steps:
+  - file: ./steps/step-01-research.md
+  - file: ./steps/step-02-ideation.md
+  - file: ./steps/step-03-user-choice.md
+  - file: ./steps/step-04-writing.md
+  - file: ./steps/step-05-review.md
+  - file: ./steps/step-06-final.md
