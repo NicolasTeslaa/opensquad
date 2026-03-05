@@ -1,4 +1,4 @@
-# OpenSquad
+# Opensquad
 
 Crie squads de agentes de IA que trabalham juntos — direto do seu IDE.
 
@@ -59,7 +59,7 @@ npx serve squads/<nome-do-squad>/dashboard
 
 ---
 
-# OpenSquad (English)
+# Opensquad (English)
 
 Create AI squads that work together — right from your IDE.
 
