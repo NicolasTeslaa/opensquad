@@ -180,38 +180,11 @@ test('init with _ides installs only selected IDE files', async () => {
   }
 });
 
-test('init with _ides opencode creates AGENTS.md', async () => {
-  const tempDir = await mkdtemp(join(tmpdir(), 'opensquad-test-'));
-
-  try {
-    await init(tempDir, { _skipPrompts: true, _ides: ['opencode'] });
-
-    const content = await readFile(join(tempDir, 'AGENTS.md'), 'utf-8');
-    assert.ok(content.includes('Opensquad'));
-    assert.ok(content.includes('/opensquad'));
-  } finally {
-    await rm(tempDir, { recursive: true, force: true });
-  }
-});
-
 test('init with _ides codex creates AGENTS.md', async () => {
   const tempDir = await mkdtemp(join(tmpdir(), 'opensquad-test-'));
 
   try {
     await init(tempDir, { _skipPrompts: true, _ides: ['codex'] });
-
-    const content = await readFile(join(tempDir, 'AGENTS.md'), 'utf-8');
-    assert.ok(content.includes('Opensquad'));
-  } finally {
-    await rm(tempDir, { recursive: true, force: true });
-  }
-});
-
-test('init with opencode and codex both selected writes AGENTS.md only once', async () => {
-  const tempDir = await mkdtemp(join(tmpdir(), 'opensquad-test-'));
-
-  try {
-    await init(tempDir, { _skipPrompts: true, _ides: ['opencode', 'codex'] });
 
     const content = await readFile(join(tempDir, 'AGENTS.md'), 'utf-8');
     assert.ok(content.includes('Opensquad'));
@@ -259,11 +232,11 @@ test('init with multiple ides records all in preferences', async () => {
   const tempDir = await mkdtemp(join(tmpdir(), 'opensquad-test-'));
 
   try {
-    await init(tempDir, { _skipPrompts: true, _ides: ['claude-code', 'opencode'] });
+    await init(tempDir, { _skipPrompts: true, _ides: ['claude-code', 'codex'] });
 
     const prefs = await readFile(join(tempDir, '_opensquad', '_memory', 'preferences.md'), 'utf-8');
     assert.ok(prefs.includes('claude-code'));
-    assert.ok(prefs.includes('opencode'));
+    assert.ok(prefs.includes('codex'));
   } finally {
     await rm(tempDir, { recursive: true, force: true });
   }
