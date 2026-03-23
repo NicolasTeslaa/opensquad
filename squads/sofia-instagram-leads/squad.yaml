@@ -1,0 +1,36 @@
+code: sofia-instagram-leads
+name: Sofia Instagram Leads
+description: Squad para pesquisar pautas, criar carrosséis de Instagram para geração de leads, gerar imagens e publicar com aprovação explícita.
+icon: "💸"
+skills:
+  - web_search
+  - web_fetch
+  - image-generator
+  - instagram-publisher
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+pipeline:
+  steps:
+    - pipeline/steps/step-01-research-focus.md
+    - pipeline/steps/step-02-research.md
+    - pipeline/steps/step-03-select-angle.md
+    - pipeline/steps/step-04-create-carousel.md
+    - pipeline/steps/step-05-approve-content.md
+    - pipeline/steps/step-06-generate-images.md
+    - pipeline/steps/step-07-review-package.md
+    - pipeline/steps/step-08-approve-dry-run.md
+    - pipeline/steps/step-09-publish-dry-run.md
+    - pipeline/steps/step-10-approve-live-publish.md
+    - pipeline/steps/step-11-publish-live.md
+metadata:
+  performance_mode: economico
+  formats:
+    - instagram-feed
+  reference_profiles:
+    - https://www.instagram.com/eusousofia.app
+

@@ -1,0 +1,7 @@
+displayName,icon,path
+Pesquisador de Pautas,🔎,./agents/researcher.agent.md
+Criador de Carrosséis,✍️,./agents/carousel-creator.agent.md
+Designer de Imagens,🎨,./agents/image-designer.agent.md
+Revisor de Conteúdo,✅,./agents/reviewer.agent.md
+Publicador do Instagram,📤,./agents/instagram-publisher.agent.md
+

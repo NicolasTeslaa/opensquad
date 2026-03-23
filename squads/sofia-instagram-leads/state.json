@@ -1,0 +1,55 @@
+{
+  "squad": "sofia-instagram-leads",
+  "status": "failed",
+  "step": {
+    "current": 6,
+    "total": 11,
+    "label": "step-06-generate-images"
+  },
+  "agents": [
+    {
+      "id": "researcher",
+      "name": "Pesquisador de Pautas",
+      "icon": "🔎",
+      "status": "done",
+      "deliverTo": null,
+      "desk": { "col": 1, "row": 1 }
+    },
+    {
+      "id": "carousel-creator",
+      "name": "Criador de Carrosséis",
+      "icon": "✍️",
+      "status": "done",
+      "deliverTo": null,
+      "desk": { "col": 2, "row": 1 }
+    },
+    {
+      "id": "image-designer",
+      "name": "Designer de Imagens",
+      "icon": "🎨",
+      "status": "idle",
+      "deliverTo": null,
+      "desk": { "col": 3, "row": 1 }
+    },
+    {
+      "id": "reviewer",
+      "name": "Revisor de Conteúdo",
+      "icon": "✅",
+      "status": "idle",
+      "deliverTo": null,
+      "desk": { "col": 1, "row": 2 }
+    },
+    {
+      "id": "instagram-publisher",
+      "name": "Publicador do Instagram",
+      "icon": "📤",
+      "status": "idle",
+      "deliverTo": null,
+      "desk": { "col": 2, "row": 2 }
+    }
+  ],
+  "handoff": null,
+  "startedAt": "2026-03-23T10:53:26-03:00",
+  "updatedAt": "2026-03-23T11:06:40-03:00",
+  "failedAt": "2026-03-23T11:06:40-03:00"
+}

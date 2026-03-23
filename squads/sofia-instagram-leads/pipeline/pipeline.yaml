@@ -1,0 +1,30 @@
+steps:
+  - id: step-01-research-focus
+    file: steps/step-01-research-focus.md
+  - id: step-02-research
+    file: steps/step-02-research.md
+  - id: step-03-select-angle
+    file: steps/step-03-select-angle.md
+  - id: step-04-create-carousel
+    file: steps/step-04-create-carousel.md
+  - id: step-05-approve-content
+    file: steps/step-05-approve-content.md
+  - id: step-06-generate-images
+    file: steps/step-06-generate-images.md
+  - id: step-07-review-package
+    file: steps/step-07-review-package.md
+  - id: step-08-approve-dry-run
+    file: steps/step-08-approve-dry-run.md
+  - id: step-09-publish-dry-run
+    file: steps/step-09-publish-dry-run.md
+  - id: step-10-approve-live-publish
+    file: steps/step-10-approve-live-publish.md
+  - id: step-11-publish-live
+    file: steps/step-11-publish-live.md
+checkpoints:
+  - step-01-research-focus
+  - step-03-select-angle
+  - step-05-approve-content
+  - step-08-approve-dry-run
+  - step-10-approve-live-publish
+
